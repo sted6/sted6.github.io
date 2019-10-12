@@ -84,10 +84,10 @@ function thaiBhan() {
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop > 600 && document.documentElement.scrollTop < 1300) {
+  if (document.documentElement.scrollTop > 600 && document.documentElement.scrollTop < 1400) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
-  } else if(document.documentElement.scrollTop < 600 || document.documentElement.scrollTop > 1300) {
+  } else if(document.documentElement.scrollTop < 600 || document.documentElement.scrollTop > 1400) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
     document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
