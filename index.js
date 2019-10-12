@@ -72,7 +72,7 @@ function noGit() {
 //Functions to bring in projects
 
 function thaiBhan() {
-  if (document.documentElement.scrollTop > 300 && document.documentElement.scrollTop < 1200) {
+  if (document.documentElement.scrollTop > 300 && document.documentElement.scrollTop < 1300) {
     document.getElementById("thaibhan").className = "img-fluid appearright";
     document.getElementById("thaibhan-desc").className = "pl-5 appearleft" 
   } else if(document.documentElement.scrollTop < 300 || document.documentElement.scrollTop > 1200) {
@@ -84,7 +84,7 @@ function thaiBhan() {
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop > 600 && document.documentElement.scrollTop < 1200) {
+  if (document.documentElement.scrollTop > 600 && document.documentElement.scrollTop < 1300) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
   } else if(document.documentElement.scrollTop < 600 || document.documentElement.scrollTop > 1200) {
