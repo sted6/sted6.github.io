@@ -47,7 +47,7 @@ function moveName() {
     document.getElementById("letterd").className = "name dclassrev";
   }
 }
-//Appearing logo
+
 function logos(){
   if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 400) {
     $(".left").addClass("appearright");
@@ -64,7 +64,7 @@ function logos(){
   }
 }
 
-//Missing work alert
+//No github alert
 function noGit() {
   alert("Sorry, I'm still working on that!");
 }
@@ -104,9 +104,8 @@ function dissapear(){
    }
 }
 
-//Make footer appear
 function footer(){
-  if (document.documentElement.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+  if (document.documentElement.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
