@@ -47,17 +47,7 @@ function moveName() {
     document.getElementById("letterd").className = "name dclassrev";
   }
 }
-//Appearing columns
-function columns(){
-  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 350) {
-    $(".column").css("border-left", "1px solid #F8F9F9");
-    $(".column").css("border-right", "1px solid #F8F9F9");
-  } else {
-    $(".column").css("border-left", "none");
-    $(".column").css("border-right", "none"); 
-  }
-}
-
+//Appearing logo
 function logos(){
   if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 350) {
     $(".left").addClass("appearright");
