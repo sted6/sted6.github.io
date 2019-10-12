@@ -105,7 +105,7 @@ function dissapear(){
 }
 
 function footer(){
-  if (document.documentElement.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+  if (document.documentElement.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
