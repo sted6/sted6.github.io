@@ -3,13 +3,12 @@ window.onscroll = function() {
   thaiBhan();
   yelpCamp();
   dissapear();
-  columns();
   logos();
 }
 
 // Appearing name
 function moveName() {
-  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 350) {
+  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 400) {
     document.getElementById("letterm").className = "name-cap mclass";
     document.getElementById("lettera").className = "name aclass";
     document.getElementById("lettert1").className = "name t1class";
@@ -49,7 +48,7 @@ function moveName() {
 }
 //Appearing logo
 function logos(){
-  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 350) {
+  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 400) {
     $(".left").addClass("appearright");
     $(".left").removeClass("invisible");
     $(".left").removeClass("appearrightrev");
