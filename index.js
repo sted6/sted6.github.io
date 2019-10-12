@@ -4,6 +4,7 @@ window.onscroll = function() {
   yelpCamp();
   dissapear();
   logos();
+  footer();
 }
 
 // Appearing name
