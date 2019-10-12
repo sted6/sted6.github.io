@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
@@ -7,10 +7,14 @@ html {
 }
 
 body {
-  min-height: 300vh;
+  min-height: 400vh;
   background-color: #E5E7E9;
 }
 
+footer {
+  font-family: 'Russo One', sans-serif;
+  margin-top: 150px;
+}
 .name {
   font-family: 'Russo One', sans-serif;
   font-size: calc(20px + 3vw);
@@ -76,6 +80,7 @@ body {
 
 /*Animation classes and keyframes*/
 /******************************/
+
 .mclass {
   -webkit-animation-name: mframe; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -1253,6 +1258,65 @@ body {
     -webkit-transform: translateX(0%);
   }
 }
+
+.appeartop {
+  animation-name: slideup;
+  -webkit-animation-name: slideup;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+-webkit-@keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.appeartoprev {
+  animation-name: slideuprev;
+  -webkit-animation-name: slideuprev;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  opacity: 0;
+}
+
+@keyframes slideuprev {
+  100% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+-webkit-@keyframes slideuprev {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+
 
 
 
