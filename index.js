@@ -64,7 +64,7 @@ function logos(){
   }
 }
 
-//No github alert
+//Missing work alert
 function noGit() {
   alert("Sorry, I'm still working on that!");
 }
@@ -102,4 +102,13 @@ function dissapear(){
    } else {
      document.getElementById("triangle-down").className = "bounce";
    }
+}
+
+//Make footer appear
+function footer(){
+  if (document.documentElement.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+    document.getElementById("footer").className = "appeartop";
+  } else {
+    document.getElementById("footer").className = "appeartoprev";
+  }
 }
