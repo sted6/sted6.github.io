@@ -127,10 +127,10 @@ function yelpCamp() {
 }
 
 function acme() {
-  if (document.documentElement.scrollTop > 900 && document.documentElement.scrollTop < 1800) {
+  if (document.documentElement.scrollTop > 1000 && document.documentElement.scrollTop < 1900) {
     document.getElementById("acmeprod").className = "img-fluid appearright";
     document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
-  } else if(document.documentElement.scrollTop < 900 || document.documentElement.scrollTop > 1800) {
+  } else if(document.documentElement.scrollTop < 1000 || document.documentElement.scrollTop > 1900) {
     if (document.getElementById("acmeprod").className === "img-fluid appearright") {
     document.getElementById("acmeprod").className = "img-fluid appearrightrev";
       document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
@@ -140,10 +140,8 @@ function acme() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear(){
-   if (document.documentElement.scrollTop > 1100){
+   if (document.documentElement.scrollTop > 1200){
      document.getElementById("triangle-down").className = "invisible";
-   } else {
-     document.getElementById("triangle-down").className = "bounce";
    }
 }
 
