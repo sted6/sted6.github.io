@@ -1,15 +1,4 @@
-window.onscroll = function() {
-  moveName();
-  thaiBhan();
-  yelpCamp();
-  dissapear();
-  logos();
-  footer();
-}
-
-// Appearing name
-function moveName() {
-  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 400) {
+window.onload = function() {
     document.getElementById("letterm").className = "name-cap mclass";
     document.getElementById("lettera").className = "name aclass";
     document.getElementById("lettert1").className = "name t1class";
@@ -27,7 +16,20 @@ function moveName() {
     document.getElementById("lettert5").className = "name t5class";
     document.getElementById("lettere3").className = "name e3class";
     document.getElementById("letterd").className = "name dclass";
-  } else {
+}
+
+window.onscroll = function() {
+  moveName();
+  thaiBhan();
+  yelpCamp();
+  dissapear();
+  logos();
+  footer();
+}
+
+// Appearing name
+function moveName() {
+  if (document.documentElement.scrollTop < 400) {
     document.getElementById("letterm").className = "name-cap mclassrev";
     document.getElementById("lettera").className = "name aclassrev";
     document.getElementById("lettert1").className = "name t1classrev";
@@ -45,6 +47,24 @@ function moveName() {
     document.getElementById("lettert5").className = "name t5classrev";
     document.getElementById("lettere3").className = "name e3classrev";
     document.getElementById("letterd").className = "name dclassrev";
+  } else {
+    document.getElementById("letterm").className = "name-cap mclass";
+    document.getElementById("lettera").className = "name aclass";
+    document.getElementById("lettert1").className = "name t1class";
+    document.getElementById("lettert2").className = "name t2class";
+    document.getElementById("letterh").className = "name hclass";
+    document.getElementById("lettere").className = "name eclass";
+    document.getElementById("letterw").className = "name wclass";
+    document.getElementById("letterm2").className = "name-cap m2class";
+    document.getElementById("letteri").className = "name iclass";
+    document.getElementById("lettert3").className = "name t3class";
+    document.getElementById("lettert4").className = "name t4class";
+    document.getElementById("lettere2").className = "name e2class";
+    document.getElementById("letterl").className = "name lclass";
+    document.getElementById("letters").className = "name sclass";
+    document.getElementById("lettert5").className = "name t5class";
+    document.getElementById("lettere3").className = "name e3class";
+    document.getElementById("letterd").className = "name dclass";
   }
 }
 
@@ -64,7 +84,7 @@ function logos(){
   }
 }
 
-//No github alert
+//Alert
 function noGit() {
   alert("Sorry, I'm still working on that!");
 }
