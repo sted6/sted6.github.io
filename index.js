@@ -140,7 +140,7 @@ function acme() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear(){
-   if (document.documentElement.scrollTop > 800){
+   if (document.documentElement.scrollTop > 1100){
      document.getElementById("triangle-down").className = "invisible";
    } else {
      document.getElementById("triangle-down").className = "bounce";
@@ -148,7 +148,7 @@ function dissapear(){
 }
 
 function footer(){
-  if (document.documentElement.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+  if (document.documentElement.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
