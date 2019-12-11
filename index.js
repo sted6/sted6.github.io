@@ -131,9 +131,9 @@ function acme() {
     document.getElementById("acmeprod").className = "img-fluid appearright";
     document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
   } else if(document.documentElement.scrollTop < 900 || document.documentElement.scrollTop > 1800) {
-    if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
-    document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
-      document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
+    if (document.getElementById("acmeprod").className === "img-fluid appearright") {
+    document.getElementById("acmeprod").className = "img-fluid appearrightrev";
+      document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
     }
   }
 }
