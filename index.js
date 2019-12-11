@@ -18,6 +18,16 @@ window.onload = function() {
     document.getElementById("letterd").className = "name dclass";
 }
 
+$(function() {
+    $(".left").addClass("appearright");
+    $(".left").removeClass("invisible");
+    $(".left").removeClass("appearrightrev");
+    $(".right").addClass("appearleft");
+    $(".right").removeClass("invisible");
+    $(".right").removeClass("appearleftrev");
+});
+
+
 window.onscroll = function() {
   moveName();
   thaiBhan();
@@ -29,7 +39,7 @@ window.onscroll = function() {
 
 // Appearing name
 function moveName() {
-  if (document.documentElement.scrollTop < 400) {
+  if (document.documentElement.scrollTop > 400) {
     document.getElementById("letterm").className = "name-cap mclassrev";
     document.getElementById("lettera").className = "name aclassrev";
     document.getElementById("lettert1").className = "name t1classrev";
@@ -69,7 +79,7 @@ function moveName() {
 }
 
 function logos(){
-  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop < 400) {
+  if (document.documentElement.scrollTop < 400) {
     $(".left").addClass("appearright");
     $(".left").removeClass("invisible");
     $(".left").removeClass("appearrightrev");
