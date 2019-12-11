@@ -32,6 +32,7 @@ window.onscroll = function() {
   moveName();
   thaiBhan();
   yelpCamp();
+  acme();
   dissapear();
   logos();
   footer();
@@ -118,6 +119,18 @@ function yelpCamp() {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
   } else if(document.documentElement.scrollTop < 600 || document.documentElement.scrollTop > 1500) {
+    if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
+    document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
+      document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
+    }
+  }
+}
+
+function acme() {
+  if (document.documentElement.scrollTop > 900 && document.documentElement.scrollTop < 1800) {
+    document.getElementById("acmeprod").className = "img-fluid appearright";
+    document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
+  } else if(document.documentElement.scrollTop < 900 || document.documentElement.scrollTop > 1800) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
     document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
