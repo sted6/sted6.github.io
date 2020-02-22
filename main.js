@@ -141,11 +141,11 @@ function acme() {
 function cpanel() {
   if (document.documentElement.scrollTop > 1400 && document.documentElement.scrollTop < 2300) {
     document.getElementById("cpanelprod").className = "img-fluid appearright";
-    document.getElementById("cpanelprod-desc").className = "pl-5 appearleft";
+    document.getElementById("cpanel-desc").className = "pl-5 appearleft";
   } else if(document.documentElement.scrollTop < 1000 || document.documentElement.scrollTop > 1900) {
     if (document.getElementById("cpanelprod").className === "img-fluid appearright") {
     document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
-      document.getElementById("cpanelprod-desc").className = "pl-5 appearleftrev";
+      document.getElementById("cpanel-desc").className = "pl-5 appearleftrev";
     }
   }
 }
