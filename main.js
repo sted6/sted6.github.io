@@ -33,6 +33,7 @@ window.onscroll = function() {
   thaiBhan();
   yelpCamp();
   acme();
+  cpanel();
   dissapear();
   logos();
   footer();
@@ -134,6 +135,17 @@ function acme() {
     if (document.getElementById("acmeprod").className === "img-fluid appearright") {
     document.getElementById("acmeprod").className = "img-fluid appearrightrev";
       document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
+    }
+  }
+}
+function cpanel() {
+  if (document.documentElement.scrollTop > 1400 && document.documentElement.scrollTop < 2300) {
+    document.getElementById("cpanelprod").className = "img-fluid appearright";
+    document.getElementById("cpanelprod-desc").className = "pl-5 appearleft";
+  } else if(document.documentElement.scrollTop < 1000 || document.documentElement.scrollTop > 1900) {
+    if (document.getElementById("cpanelprod").className === "img-fluid appearright") {
+    document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
+      document.getElementById("cpanelprod-desc").className = "pl-5 appearleftrev";
     }
   }
 }
