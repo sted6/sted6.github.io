@@ -152,13 +152,13 @@ function cpanel() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear(){
-   if (document.documentElement.scrollTop > 1200){
+   if (document.documentElement.scrollTop > 1400){
      document.getElementById("triangle-down").className = "invisible";
    }
 }
 
 function footer(){
-  if (document.documentElement.scrollTop > 2000 || document.documentElement.scrollTop > 2700) {
+  if (document.documentElement.scrollTop > 2200) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
