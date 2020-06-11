@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
   document.getElementById("letterm").className = "name-cap mclass";
   document.getElementById("lettera").className = "name aclass";
   document.getElementById("lettert1").className = "name t1class";
@@ -18,7 +18,7 @@ window.onload = function () {
   document.getElementById("letterd").className = "name dclass";
 }
 
-$(function () {
+$(function() {
   $(".left").addClass("appearright");
   $(".left").removeClass("invisible");
   $(".left").removeClass("appearrightrev");
@@ -28,7 +28,7 @@ $(function () {
 });
 
 
-window.onscroll = function () {
+window.onscroll = function() {
   moveName();
   v2tChat();
   thaiBhan();
