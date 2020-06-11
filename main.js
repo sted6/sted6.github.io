@@ -129,10 +129,10 @@ function cpanel() {
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 2000) {
+  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 1900) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 2000) {
+  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 1900) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
       document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
@@ -173,7 +173,7 @@ function dissapear() {
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 2100) {
+  if (document.documentElement.scrollTop >= 2150) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
