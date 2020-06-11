@@ -173,7 +173,7 @@ function dissapear() {
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 1950) {
+  if (document.documentElement.scrollTop >= 2100) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
