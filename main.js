@@ -105,10 +105,10 @@ function noGit() {
 //Functions to bring in projects
 
 function v2tChat() {
-  if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1300) {
+  if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1200) {
     document.getElementById("v2t-chat").className = "img-fluid appearright";
     document.getElementById("v2t-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1300) {
+  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1200) {
     if (document.getElementById("v2t-chat").className === "img-fluid appearright") {
       document.getElementById("v2t-chat").className = "img-fluid appearrightrev";
       document.getElementById("v2t-desc").className = "pl-5 appearleftrev";
@@ -117,10 +117,10 @@ function v2tChat() {
 }
 
 function cpanel() {
-  if (document.documentElement.scrollTop > 800 && document.documentElement.scrollTop <= 1700) {
+  if (document.documentElement.scrollTop >= 700 && document.documentElement.scrollTop <= 1600) {
     document.getElementById("cpanelprod").className = "img-fluid appearright";
     document.getElementById("cpanel-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 800 || document.documentElement.scrollTop >= 1700) {
+  } else if (document.documentElement.scrollTop <= 700 || document.documentElement.scrollTop >= 1600) {
     if (document.getElementById("cpanelprod").className === "img-fluid appearright") {
       document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
       document.getElementById("cpanel-desc").className = "pl-5 appearleftrev";
@@ -129,10 +129,10 @@ function cpanel() {
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop >= 1200 && document.documentElement.scrollTop <= 2200) {
+  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 2100) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 1200 || document.documentElement.scrollTop >= 2200) {
+  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 2100) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
       document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
@@ -141,10 +141,10 @@ function yelpCamp() {
 }
 
 function thaiBhan() {
-  if (document.documentElement.scrollTop >= 1700 && document.documentElement.scrollTop <= 2600) {
+  if (document.documentElement.scrollTop >= 1600 && document.documentElement.scrollTop <= 2500) {
     document.getElementById("thaibhan").className = "img-fluid appearright";
     document.getElementById("thaibhan-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 1700 || document.documentElement.scrollTop >= 2600) {
+  } else if (document.documentElement.scrollTop <= 1600 || document.documentElement.scrollTop >= 2500) {
     if (document.getElementById("thaibhan").className === "img-fluid appearright") {
       document.getElementById("thaibhan").className = "img-fluid appearrightrev";
       document.getElementById("thaibhan-desc").className = "pl-5 appearleftrev";
@@ -153,10 +153,10 @@ function thaiBhan() {
 }
 
 function acme() {
-  if (document.documentElement.scrollTop > 2000 && document.documentElement.scrollTop <= 3000) {
+  if (document.documentElement.scrollTop > 1900 && document.documentElement.scrollTop <= 3000) {
     document.getElementById("acmeprod").className = "img-fluid appearright";
     document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop < 2000 || document.documentElement.scrollTop >= 3000) {
+  } else if (document.documentElement.scrollTop < 1900 || document.documentElement.scrollTop >= 3000) {
     if (document.getElementById("acmeprod").className === "img-fluid appearright") {
       document.getElementById("acmeprod").className = "img-fluid appearrightrev";
       document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
@@ -167,7 +167,7 @@ function acme() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear() {
-  if (document.documentElement.scrollTop >= 2800) {
+  if (document.documentElement.scrollTop >= 2700) {
     document.getElementById("triangle-down").className = "invisible";
   }
 }
