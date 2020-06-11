@@ -1100,7 +1100,8 @@ footer {
       margin-left:-25px;
       height:50px;
       width:50px;
-      -webkit-animation:bounce .8s infinite;
+      animation: bounce .8s infinite;
+      -webkit-animation: bounce .8s infinite;
     }
     
 @keyframes  bounce {
@@ -1272,7 +1273,7 @@ footer {
     transform: translateY(0%);
   }
 }
--webkit-@keyframes slideup {
+@-webkit-keyframes slideup {
   0% {
     opacity: 0;
     -webkit-transform: translateY(70%);
@@ -1301,7 +1302,7 @@ footer {
     transform: translateY(0%);
   }
 }
--webkit-@keyframes slideuprev {
+@-webkit-keyframes slideuprev {
   0% {
     opacity: 0;
     -webkit-transform: translateY(70%);
