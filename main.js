@@ -31,6 +31,7 @@ $(function() {
 
 window.onscroll = function() {
   moveName();
+  sampleForms();
   v2tChat();
   thaiBhan();
   yelpCamp();
@@ -118,7 +119,7 @@ function sampleForms() {
     document.getElementById("sampleforms").className = "img-fluid appearright";
     document.getElementById("sampleforms-desc").className = "pl-5 appearleft"
   } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1100) {
-    if (document.getElementById("sampleformst").className === "img-fluid appearright") {
+    if (document.getElementById("sampleforms").className === "img-fluid appearright") {
       document.getElementById("sampleforms").className = "img-fluid appearrightrev";
       document.getElementById("sampleforms-desc").className = "pl-5 appearleftrev";
     }
@@ -146,6 +147,7 @@ function cpanel() {
       document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
       document.getElementById("cpanel-desc").className = "pl-5 appearleftrev";
     }
+  }
 }
 
 function yelpCamp() {
