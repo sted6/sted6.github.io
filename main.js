@@ -105,11 +105,31 @@ function noGit() {
 
 //Functions to bring in projects
 
-function v2tChat() {
+// function animation(project) {
+//   let domEl = document.getElementBy(project);
+//   let distance = window.pageYOffset + domEl.getBoundingClientRect().top;
+//   if (document.documentElement.scrollTop >= distance && document.documentElement.scrollTop <= distance + 700) {
+//     domEl.className = 
+//   }
+// }
+
+function sampleForms() {
   if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1100) {
+    document.getElementById("sampleforms").className = "img-fluid appearright";
+    document.getElementById("sampleforms-desc").className = "pl-5 appearleft"
+  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1100) {
+    if (document.getElementById("sampleformst").className === "img-fluid appearright") {
+      document.getElementById("sampleforms").className = "img-fluid appearrightrev";
+      document.getElementById("sampleforms-desc").className = "pl-5 appearleftrev";
+    }
+  }
+}
+
+function v2tChat() {
+  if (document.documentElement.scrollTop >= 700 && document.documentElement.scrollTop <= 1500) {
     document.getElementById("v2t-chat").className = "img-fluid appearright";
     document.getElementById("v2t-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1100) {
+  } else if (document.documentElement.scrollTop <= 700 || document.documentElement.scrollTop >= 1500) {
     if (document.getElementById("v2t-chat").className === "img-fluid appearright") {
       document.getElementById("v2t-chat").className = "img-fluid appearrightrev";
       document.getElementById("v2t-desc").className = "pl-5 appearleftrev";
@@ -118,22 +138,21 @@ function v2tChat() {
 }
 
 function cpanel() {
-  if (document.documentElement.scrollTop >= 700 && document.documentElement.scrollTop <= 1500) {
+  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 1900) {
     document.getElementById("cpanelprod").className = "img-fluid appearright";
     document.getElementById("cpanel-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 700 || document.documentElement.scrollTop >= 1500) {
+  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 1900) {
     if (document.getElementById("cpanelprod").className === "img-fluid appearright") {
       document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
       document.getElementById("cpanel-desc").className = "pl-5 appearleftrev";
     }
-  }
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 1900) {
+  if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop <= 2300) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 1900) {
+  } else if (document.documentElement.scrollTop <= 1500 || document.documentElement.scrollTop >= 2300) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
       document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
@@ -142,10 +161,10 @@ function yelpCamp() {
 }
 
 function thaiBhan() {
-  if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop <= 2400) {
+  if (document.documentElement.scrollTop >= 1900 && document.documentElement.scrollTop <= 2700) {
     document.getElementById("thaibhan").className = "img-fluid appearright";
     document.getElementById("thaibhan-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 1500 || document.documentElement.scrollTop >= 2400) {
+  } else if (document.documentElement.scrollTop <= 1900 || document.documentElement.scrollTop >= 2700) {
     if (document.getElementById("thaibhan").className === "img-fluid appearright") {
       document.getElementById("thaibhan").className = "img-fluid appearrightrev";
       document.getElementById("thaibhan-desc").className = "pl-5 appearleftrev";
@@ -154,10 +173,10 @@ function thaiBhan() {
 }
 
 function acme() {
-  if (document.documentElement.scrollTop > 1900 && document.documentElement.scrollTop <= 3000) {
+  if (document.documentElement.scrollTop > 2300 && document.documentElement.scrollTop <= 3300) {
     document.getElementById("acmeprod").className = "img-fluid appearright";
     document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop < 1900 || document.documentElement.scrollTop >= 3000) {
+  } else if (document.documentElement.scrollTop < 2300 || document.documentElement.scrollTop >= 3300) {
     if (document.getElementById("acmeprod").className === "img-fluid appearright") {
       document.getElementById("acmeprod").className = "img-fluid appearrightrev";
       document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
