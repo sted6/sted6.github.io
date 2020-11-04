@@ -30,6 +30,10 @@ footer {
   padding-top: 15px;
 }
 
+.project-row {
+  min-height: 275px;
+}
+
 /*Larger than mobile only styling*/
 @media screen and (min-width: 600px) {
   #logos i {
