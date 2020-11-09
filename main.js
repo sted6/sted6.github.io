@@ -41,6 +41,7 @@ window.onscroll = function() {
   dissapear();
   logos();
   footer();
+  updateScrollPos();
 }
 
 // Appearing name
@@ -213,6 +214,10 @@ function footer() {
   } else {
     document.getElementById("footer").className = "appeartoprev";
   }
+}
+
+function updateScrollPos() {
+  document.getElementById('scrollPos').innerText = document.documentElement.scrollTop;
 }
 
 // function hostingFailed() {

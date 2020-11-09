@@ -1317,9 +1317,9 @@ footer {
   }
 }
 
-
-
-
-
-
-
+#scrollPos {
+  position: absolute;
+  z-index: 9;
+  bottom: 10px;
+  left: 10px;
+}
