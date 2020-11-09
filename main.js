@@ -31,6 +31,7 @@ $(function() {
 
 window.onscroll = function() {
   moveName();
+  reactMessenger();
   sampleForms();
   v2tChat();
   // thaiBhan();
@@ -114,11 +115,23 @@ function logos() {
 //   }
 // }
 
-function sampleForms() {
+function reactMessenger() {
   if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1100) {
+    document.getElementById("reactmessenger").className = "img-fluid appearright";
+    document.getElementById("reactmessenger-desc").className = "pl-5 appearleft"
+  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1100) {
+    if (document.getElementById("reactmessenger").className === "img-fluid appearright") {
+      document.getElementById("reactmessenger").className = "img-fluid appearrightrev";
+      document.getElementById("reactmessenger-desc").className = "pl-5 appearleftrev";
+    }
+  }
+}
+
+function sampleForms() {
+  if (document.documentElement.scrollTop >= 700 && document.documentElement.scrollTop <= 1500) {
     document.getElementById("sampleforms").className = "img-fluid appearright";
     document.getElementById("sampleforms-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1100) {
+  } else if (document.documentElement.scrollTop <= 700 || document.documentElement.scrollTop >= 1500) {
     if (document.getElementById("sampleforms").className === "img-fluid appearright") {
       document.getElementById("sampleforms").className = "img-fluid appearrightrev";
       document.getElementById("sampleforms-desc").className = "pl-5 appearleftrev";
@@ -127,10 +140,10 @@ function sampleForms() {
 }
 
 function v2tChat() {
-  if (document.documentElement.scrollTop >= 700 && document.documentElement.scrollTop <= 1500) {
+  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 1900) {
     document.getElementById("v2t-chat").className = "img-fluid appearright";
     document.getElementById("v2t-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 700 || document.documentElement.scrollTop >= 1500) {
+  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 1900) {
     if (document.getElementById("v2t-chat").className === "img-fluid appearright") {
       document.getElementById("v2t-chat").className = "img-fluid appearrightrev";
       document.getElementById("v2t-desc").className = "pl-5 appearleftrev";
@@ -139,10 +152,10 @@ function v2tChat() {
 }
 
 function cpanel() {
-  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 1900) {
+  if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop <= 2300) {
     document.getElementById("cpanelprod").className = "img-fluid appearright";
     document.getElementById("cpanel-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 1900) {
+  } else if (document.documentElement.scrollTop <= 1500 || document.documentElement.scrollTop >= 2300) {
     if (document.getElementById("cpanelprod").className === "img-fluid appearright") {
       document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
       document.getElementById("cpanel-desc").className = "pl-5 appearleftrev";
@@ -151,10 +164,10 @@ function cpanel() {
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop <= 2300) {
+  if (document.documentElement.scrollTop >= 1900 && document.documentElement.scrollTop <= 2700) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 1500 || document.documentElement.scrollTop >= 2300) {
+  } else if (document.documentElement.scrollTop <= 1900 || document.documentElement.scrollTop >= 2700) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
       document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
@@ -163,10 +176,10 @@ function yelpCamp() {
 }
 
 function thaiBhan() {
-  if (document.documentElement.scrollTop >= 1900 && document.documentElement.scrollTop <= 2700) {
+  if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
     document.getElementById("thaibhan").className = "img-fluid appearright";
     document.getElementById("thaibhan-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 1900 || document.documentElement.scrollTop >= 2700) {
+  } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
     if (document.getElementById("thaibhan").className === "img-fluid appearright") {
       document.getElementById("thaibhan").className = "img-fluid appearrightrev";
       document.getElementById("thaibhan-desc").className = "pl-5 appearleftrev";
@@ -175,10 +188,10 @@ function thaiBhan() {
 }
 
 function acme() {
-  if (document.documentElement.scrollTop > 2300 && document.documentElement.scrollTop <= 3300) {
+  if (document.documentElement.scrollTop > 2700 && document.documentElement.scrollTop <= 3900) {
     document.getElementById("acmeprod").className = "img-fluid appearright";
     document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop < 2300 || document.documentElement.scrollTop >= 3300) {
+  } else if (document.documentElement.scrollTop < 2700 || document.documentElement.scrollTop >= 3900) {
     if (document.getElementById("acmeprod").className === "img-fluid appearright") {
       document.getElementById("acmeprod").className = "img-fluid appearrightrev";
       document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
@@ -189,13 +202,13 @@ function acme() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear() {
-  if (document.documentElement.scrollTop >= 1900) {
+  if (document.documentElement.scrollTop >= 2300) {
     document.getElementById("triangle-down").className = "invisible";
   }
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 1900) {
+  if (document.documentElement.scrollTop >= 2300) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
