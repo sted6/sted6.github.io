@@ -1323,3 +1323,8 @@ footer {
   bottom: 100px;
   left: 10px;
 } */
+
+footer {
+  height: 100px;
+  margin-bottom: 20px;
+}
