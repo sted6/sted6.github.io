@@ -41,7 +41,7 @@ window.onscroll = function() {
   dissapear();
   logos();
   footer();
-  updateScrollPos();
+  // updateScrollPos();
 }
 
 // Appearing name
@@ -209,7 +209,7 @@ function dissapear() {
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 1900) {
+  if (document.documentElement.scrollTop >= 2100) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
