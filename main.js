@@ -176,51 +176,48 @@ function yelpCamp() {
   }
 }
 
-function thaiBhan() {
-  if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
-    document.getElementById("thaibhan").className = "img-fluid appearright";
-    document.getElementById("thaibhan-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
-    if (document.getElementById("thaibhan").className === "img-fluid appearright") {
-      document.getElementById("thaibhan").className = "img-fluid appearrightrev";
-      document.getElementById("thaibhan-desc").className = "pl-5 appearleftrev";
-    }
-  }
-}
+// function thaiBhan() {
+//   if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
+//     document.getElementById("thaibhan").className = "img-fluid appearright";
+//     document.getElementById("thaibhan-desc").className = "pl-5 appearleft"
+//   } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
+//     if (document.getElementById("thaibhan").className === "img-fluid appearright") {
+//       document.getElementById("thaibhan").className = "img-fluid appearrightrev";
+//       document.getElementById("thaibhan-desc").className = "pl-5 appearleftrev";
+//     }
+//   }
+// }
 
-function acme() {
-  if (document.documentElement.scrollTop > 2700 && document.documentElement.scrollTop <= 3900) {
-    document.getElementById("acmeprod").className = "img-fluid appearright";
-    document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop < 2700 || document.documentElement.scrollTop >= 3900) {
-    if (document.getElementById("acmeprod").className === "img-fluid appearright") {
-      document.getElementById("acmeprod").className = "img-fluid appearrightrev";
-      document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
-    }
-  }
-}
+// function acme() {
+//   if (document.documentElement.scrollTop > 2700 && document.documentElement.scrollTop <= 3900) {
+//     document.getElementById("acmeprod").className = "img-fluid appearright";
+//     document.getElementById("acmeprod-desc").className = "pl-5 appearleft";
+//   } else if (document.documentElement.scrollTop < 2700 || document.documentElement.scrollTop >= 3900) {
+//     if (document.getElementById("acmeprod").className === "img-fluid appearright") {
+//       document.getElementById("acmeprod").className = "img-fluid appearrightrev";
+//       document.getElementById("acmeprod-desc").className = "pl-5 appearleftrev";
+//     }
+//   }
+// }
 
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear() {
-  if (document.documentElement.scrollTop >= 2300) {
+  if (document.documentElement.scrollTop >= 1900) {
     document.getElementById("triangle-down").className = "invisible";
   }
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 2300) {
+  if (document.documentElement.scrollTop >= 1900) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
   }
 }
 
-function updateScrollPos() {
-  console.log(document.documentElement.scrollTop);
-  document.getElementById('scrollPos').innerHTML = "<p>scrollTop: " + document.documentElement.scrollTop + "</p>";
-}
-
-// function hostingFailed() {
-//   alert("Sorry, x10 seems to have stopped hosting my projects. This project is old anyway so I've decided to archive it soon.");
+// function updateScrollPos() {
+//   console.log(document.documentElement.scrollTop);
+//   document.getElementById('scrollPos').innerHTML = "<p>scrollTop: " + document.documentElement.scrollTop + "</p>";
 // }
+
