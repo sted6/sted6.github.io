@@ -217,7 +217,8 @@ function footer() {
 }
 
 function updateScrollPos() {
-  document.getElementById('scrollPos').innerText = document.documentElement.scrollTop;
+  console.log(document.documentElement.scrollTop);
+  document.getElementById('scrollPos').innerHTML = "<p>scrollTop: " + document.documentElement.scrollTop + "</p>";
 }
 
 // function hostingFailed() {
