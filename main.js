@@ -1,5 +1,5 @@
 window.onload = function() {
-  // alert("UPDATE 10/28/2020: While I appreciate you checking out my portfolio, please be aware that it hasn't been updated in well over a year. I plan on having added several new projects and archiving some of the older stuff within the next couple of weeks. Please try again towards the end of November. Thanks!");
+  alert("Hello! Thanks for checking out my portfolio. Just a heads up, the heroku apps will take a little while to load if they haven't been accessed lately. Thank you for your patience!");
   document.getElementById("letterm").className = "name-cap mclass";
   document.getElementById("lettera").className = "name aclass";
   document.getElementById("lettert1").className = "name t1class";
