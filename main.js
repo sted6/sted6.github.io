@@ -176,17 +176,17 @@ function yelpCamp() {
   }
 }
 
-// function thaiBhan() {
-//   if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
-//     document.getElementById("thaibhan").className = "img-fluid appearright";
-//     document.getElementById("thaibhan-desc").className = "pl-5 appearleft"
-//   } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
-//     if (document.getElementById("thaibhan").className === "img-fluid appearright") {
-//       document.getElementById("thaibhan").className = "img-fluid appearrightrev";
-//       document.getElementById("thaibhan-desc").className = "pl-5 appearleftrev";
-//     }
-//   }
-// }
+function smashSuite() {
+  if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
+    document.getElementById("smashsuite").className = "img-fluid appearright";
+    document.getElementById("smashsuite-desc").className = "pl-5 appearleft"
+  } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
+    if (document.getElementById("smashsuite").className === "img-fluid appearright") {
+      document.getElementById("smashsuite").className = "img-fluid appearrightrev";
+      document.getElementById("smashsuite-desc").className = "pl-5 appearleftrev";
+    }
+  }
+}
 
 // function acme() {
 //   if (document.documentElement.scrollTop > 2700 && document.documentElement.scrollTop <= 3900) {
@@ -203,13 +203,13 @@ function yelpCamp() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear() {
-  if (document.documentElement.scrollTop >= 1900) {
+  if (document.documentElement.scrollTop >= 2300) {
     document.getElementById("triangle-down").className = "invisible";
   }
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 2000) {
+  if (document.documentElement.scrollTop >= 2450) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
