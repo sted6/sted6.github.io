@@ -34,10 +34,9 @@ window.onscroll = function() {
   reactMessenger();
   sampleForms();
   v2tChat();
-  // thaiBhan();
   yelpCamp();
-  // acme();
   cpanel();
+  smashSuite();
   dissapear();
   logos();
   footer();
