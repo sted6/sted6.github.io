@@ -31,6 +31,7 @@ $(function() {
 
 window.onscroll = function() {
   moveName();
+  burgerBuilder();
   reactMessenger();
   sampleForms();
   v2tChat();
