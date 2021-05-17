@@ -119,12 +119,12 @@ function logos() {
 
 function wgu() {
   if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1100) {
-    document.getElementById("smashsuite").className = "img-fluid appearright";
-    document.getElementById("smashsuite-desc").className = "pl-5 appearleft"
+    document.getElementById("wgu_scheduler").className = "img-fluid appearright";
+    document.getElementById("wgu_scheduler-desc").className = "pl-5 appearleft"
   } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1100) {
-    if (document.getElementById("smashsuite").className === "img-fluid appearright") {
-      document.getElementById("smashsuite").className = "img-fluid appearrightrev";
-      document.getElementById("smashsuite-desc").className = "pl-5 appearleftrev";
+    if (document.getElementById("wgu_scheduler").className === "img-fluid appearright") {
+      document.getElementById("wgu_scheduler").className = "img-fluid appearrightrev";
+      document.getElementById("wgu_scheduler-desc").className = "pl-5 appearleftrev";
     }
   }
 }
