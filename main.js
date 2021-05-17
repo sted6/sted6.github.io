@@ -119,10 +119,10 @@ function logos() {
 
 
 function wgu() {
-  if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1500) {
+  if (document.documentElement.scrollTop >= 400 && document.documentElement.scrollTop <= 1900) {
     document.getElementById("wgu_scheduler").className = "img-fluid appearright";
     document.getElementById("wgu_scheduler-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1500) {
+  } else if (document.documentElement.scrollTop <= 400 || document.documentElement.scrollTop >= 1900) {
     if (document.getElementById("wgu_scheduler").className === "img-fluid appearright") {
       document.getElementById("wgu_scheduler").className = "img-fluid appearrightrev";
       document.getElementById("wgu_scheduler-desc").className = "pl-5 appearleftrev";
