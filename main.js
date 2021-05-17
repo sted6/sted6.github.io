@@ -31,6 +31,7 @@ $(function() {
 
 window.onscroll = function() {
   moveName();
+  wgu();
   burgerBuilder();
   reactMessenger();
   sampleForms();
