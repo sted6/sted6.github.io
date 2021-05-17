@@ -131,10 +131,10 @@ function wgu() {
 }
 
 function burgerBuilder() {
-  if (document.documentElement.scrollTop >= 1100 && document.documentElement.scrollTop <= 1900) {
+  if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop <= 2300) {
     document.getElementById("burgerbuilder").className = "img-fluid appearright";
     document.getElementById("burgerbuilder-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 1100 || document.documentElement.scrollTop >= 1900) {
+  } else if (document.documentElement.scrollTop <= 1500 || document.documentElement.scrollTop >= 2300) {
     if (document.getElementById("burgerbuilder").className === "img-fluid appearright") {
       document.getElementById("burgerbuilder").className = "img-fluid appearrightrev";
       document.getElementById("burgerbuilder-desc").className = "pl-5 appearleftrev";
@@ -143,10 +143,10 @@ function burgerBuilder() {
 }
 
 function reactMessenger() {
-  if (document.documentElement.scrollTop >= 1500 && document.documentElement.scrollTop <= 2300) {
+  if (document.documentElement.scrollTop >= 1900 && document.documentElement.scrollTop <= 2700) {
     document.getElementById("reactmessenger").className = "img-fluid appearright";
     document.getElementById("reactmessenger-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 1500 || document.documentElement.scrollTop >= 2300) {
+  } else if (document.documentElement.scrollTop <= 1900 || document.documentElement.scrollTop >= 2700) {
     if (document.getElementById("reactmessenger").className === "img-fluid appearright") {
       document.getElementById("reactmessenger").className = "img-fluid appearrightrev";
       document.getElementById("reactmessenger-desc").className = "pl-5 appearleftrev";
@@ -155,10 +155,10 @@ function reactMessenger() {
 }
 
 function sampleForms() {
-  if (document.documentElement.scrollTop >= 1900 && document.documentElement.scrollTop <= 2700) {
+  if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
     document.getElementById("sampleforms").className = "img-fluid appearright";
     document.getElementById("sampleforms-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 1900 || document.documentElement.scrollTop >= 2700) {
+  } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
     if (document.getElementById("sampleforms").className === "img-fluid appearright") {
       document.getElementById("sampleforms").className = "img-fluid appearrightrev";
       document.getElementById("sampleforms-desc").className = "pl-5 appearleftrev";
@@ -167,10 +167,10 @@ function sampleForms() {
 }
 
 function v2tChat() {
-  if (document.documentElement.scrollTop >= 2300 && document.documentElement.scrollTop <= 3100) {
+  if (document.documentElement.scrollTop >= 2700 && document.documentElement.scrollTop <= 3500) {
     document.getElementById("v2t-chat").className = "img-fluid appearright";
     document.getElementById("v2t-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 2300 || document.documentElement.scrollTop >= 3100) {
+  } else if (document.documentElement.scrollTop <= 2700 || document.documentElement.scrollTop >= 3500) {
     if (document.getElementById("v2t-chat").className === "img-fluid appearright") {
       document.getElementById("v2t-chat").className = "img-fluid appearrightrev";
       document.getElementById("v2t-desc").className = "pl-5 appearleftrev";
@@ -179,10 +179,10 @@ function v2tChat() {
 }
 
 function cpanel() {
-  if (document.documentElement.scrollTop >= 2700 && document.documentElement.scrollTop <= 3500) {
+  if (document.documentElement.scrollTop >= 3100 && document.documentElement.scrollTop <= 3900) {
     document.getElementById("cpanelprod").className = "img-fluid appearright";
     document.getElementById("cpanel-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 2700 || document.documentElement.scrollTop >= 3500) {
+  } else if (document.documentElement.scrollTop <= 3100 || document.documentElement.scrollTop >= 3900) {
     if (document.getElementById("cpanelprod").className === "img-fluid appearright") {
       document.getElementById("cpanelprod").className = "img-fluid appearrightrev";
       document.getElementById("cpanel-desc").className = "pl-5 appearleftrev";
@@ -191,10 +191,10 @@ function cpanel() {
 }
 
 function yelpCamp() {
-  if (document.documentElement.scrollTop >= 3100 && document.documentElement.scrollTop <= 3900) {
+  if (document.documentElement.scrollTop >= 3500 && document.documentElement.scrollTop <= 4400) {
     document.getElementById("yelpcamp").className = "img-fluid appearright";
     document.getElementById("yelpcamp-desc").className = "pl-5 appearleft";
-  } else if (document.documentElement.scrollTop <= 3100 || document.documentElement.scrollTop >= 3900) {
+  } else if (document.documentElement.scrollTop <= 3500 || document.documentElement.scrollTop >= 4400) {
     if (document.getElementById("yelpcamp").className === "img-fluid appearright") {
       document.getElementById("yelpcamp").className = "img-fluid appearrightrev";
       document.getElementById("yelpcamp-desc").className = "pl-5 appearleftrev";
@@ -203,10 +203,10 @@ function yelpCamp() {
 }
 
 function smashSuite() {
-  if (document.documentElement.scrollTop >= 3500 && document.documentElement.scrollTop <= 4400) {
+  if (document.documentElement.scrollTop >= 3900 && document.documentElement.scrollTop <= 4800) {
     document.getElementById("smashsuite").className = "img-fluid appearright";
     document.getElementById("smashsuite-desc").className = "pl-5 appearleft"
-  } else if (document.documentElement.scrollTop <= 3500 || document.documentElement.scrollTop >= 4400) {
+  } else if (document.documentElement.scrollTop <= 3900 || document.documentElement.scrollTop >= 4800) {
     if (document.getElementById("smashsuite").className === "img-fluid appearright") {
       document.getElementById("smashsuite").className = "img-fluid appearrightrev";
       document.getElementById("smashsuite-desc").className = "pl-5 appearleftrev";
@@ -217,13 +217,13 @@ function smashSuite() {
 
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear() {
-  if (document.documentElement.scrollTop >= 3500) {
+  if (document.documentElement.scrollTop >= 3900) {
     document.getElementById("triangle-down").className = "invisible";
   }
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 3650) {
+  if (document.documentElement.scrollTop >= 4050) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
