@@ -214,7 +214,6 @@ function smashSuite() {
   }
 }
 
-
 //Make scroll down indicator dissapear when bottom is reached
 function dissapear() {
   if (document.documentElement.scrollTop >= 3900) {
@@ -223,7 +222,7 @@ function dissapear() {
 }
 
 function footer() {
-  if (document.documentElement.scrollTop >= 4050) {
+  if (document.documentElement.scrollTop >= 4000) {
     document.getElementById("footer").className = "appeartop";
   } else {
     document.getElementById("footer").className = "appeartoprev";
