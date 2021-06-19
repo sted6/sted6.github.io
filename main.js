@@ -28,6 +28,7 @@ window.onscroll = function () {
   dissapear();
   footer();
   moveName();
+  logos();
 };
 
 // Appearing name
